@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>GAZU — Fashion That Moves With You</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Syne:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span class="announcement-left">FREE DELIVERY ON ORDERS ABOVE ₹999</span>
+      <div class="announcement-right">
+        <a href="#app">DOWNLOAD APP</a>
+        <span class="sep">|</span>
+        <a href="#track">TRACK ORDER</a>
+        <span class="sep">|</span>
+        <a href="#help">HELP</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="navbar">
+    <div class="header-inner">
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle Navigation">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <!-- Category Links (Left) -->
+      <nav class="nav-categories" id="navMenu">
+        <a href="#men" class="nav-link active" data-category="men">MEN</a>
+        <a href="#women" class="nav-link" data-category="women">WOMEN</a>
+        <a href="#kids" class="nav-link" data-category="kids">KIDS</a>
+        <a href="#beauty" class="nav-link" data-category="beauty">BEAUTY</a>
+      </nav>
+
+      <!-- Central Logo -->
+      <a href="#" class="brand-logo" aria-label="GAZU Home">
+        GAZU
+      </a>
+
+      <!-- Action Utilities (Right) -->
+      <div class="nav-utilities">
+        <button class="util-btn search-trigger" id="openSearch" aria-label="Search Catalog">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="util-text">SEARCH</span>
+        </button>
+
+        <button class="util-btn login-trigger" id="openAuth" aria-label="User Account">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span class="util-text">LOGIN</span>
+        </button>
+
+        <button class="util-btn wishlist-trigger" id="openWishlist" aria-label="Wishlist">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="util-text">WISHLIST</span>
+          <span class="util-badge wishlist-count" id="wishlistCount">0</span>
+        </button>
+
+        <button class="util-btn cart-trigger" id="openCart" aria-label="Shopping Cart">
+          <svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="util-text">CART (<span id="cartCountHeader">0</span>)</span>
+          <span class="util-badge cart-count" id="cartCountMobile">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section with Giant Typography & Overlapping Model -->
+    <section class="hero-section">
+      <div class="hero-container">
+        
+        <!-- Left Hero Copy & Actions -->
+        <div class="hero-content-left">
+          <p class="hero-subtitle">
+            FASHION<br>
+            THAT MOVES<br>
+            WITH YOU.
+          </p>
+          <div class="hero-divider"></div>
+          
+          <div class="hero-cta-group">
+            <a href="#catalog" class="btn btn-black">SHOP NOW</a>
+            <a href="#new-season" class="btn btn-text">EXPLORE NEW IN</a>
+          </div>
+        </div>
+
+        <!-- Center Giant Typographic Brand & Layered Model -->
+        <div class="hero-stage">
+          <!-- Background Massive Typographic Text -->
+          <div class="hero-big-typography" aria-hidden="true">
+            GAZU
+          </div>
+          
+          <!-- Central Streetwear Fashion Model -->
+          <div class="hero-model-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1000&auto=format&fit=crop&q=85" 
+              alt="GAZU Fashion Model in Streetwear Overcoat" 
+              class="hero-model-img"
+              loading="eager"
+            />
+          </div>
+        </div>
+
+        <!-- Right Hero Label -->
+        <div class="hero-content-right">
+          <span class="collection-tag">
+            NEW<br>
+            COLLECTION<br>
+            <strong>2024</strong>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Category Strip (Black Section) -->
+    <section class="category-strip">
+      <div class="category-strip-inner">
+        
+        <!-- Men Category Card -->
+        <div class="cat-card">
+          <div class="cat-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=85" 
+              alt="Men Fashion" 
+              class="cat-thumb"
+            />
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-title">MEN</h3>
+            <p class="cat-desc">Elevated everyday essentials.</p>
+            <a href="#catalog" class="cat-link" data-filter="men">SHOP MEN &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Women Category Card -->
+        <div class="cat-card">
+          <div class="cat-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=85" 
+              alt="Women Fashion" 
+              class="cat-thumb"
+            />
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-title">WOMEN</h3>
+            <p class="cat-desc">Effortless style for every you.</p>
+            <a href="#catalog" class="cat-link" data-filter="women">SHOP WOMEN &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Kids Category Card -->
+        <div class="cat-card">
+          <div class="cat-thumb-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=600&auto=format&fit=crop&q=85" 
+              alt="Kids Fashion" 
+              class="cat-thumb"
+            />
+          </div>
+          <div class="cat-info">
+            <h3 class="cat-title">KIDS</h3>
+            <p class="cat-desc">Comfort meets cool everyday.</p>
+            <a href="#catalog" class="cat-link" data-filter="kids">SHOP KIDS &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- New Season / New Vibes Banner -->
+    <section class="new-vibes-banner" id="new-season">
+      <div class="vibes-banner-inner">
+        
+        <!-- Left Banner Typography -->
+        <div class="vibes-text-col">
+          <span class="vibes-tag">NEW SEASON</span>
+          <h2 class="vibes-heading">
+            NEW<br>VIBES
+          </h2>
+          <p class="vibes-desc">Discover everything new and now.</p>
+          <a href="#catalog" class="btn btn-black vibes-btn">EXPLORE COLLECTION</a>
+        </div>
+
+        <!-- Right Banner Editorial Image -->
+        <div class="vibes-image-col">
+          <img 
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&auto=format&fit=crop&q=85" 
+            alt="New Vibes Editorial Portrait" 
+            class="vibes-img"
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Trust Badges Strip -->
+    <section class="trust-strip">
+      <div class="trust-inner">
+        
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="trust-copy">
+            <h4>FAST DELIVERY</h4>
+            <p>Quick & safe delivery</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <div class="trust-copy">
+            <h4>EASY RETURNS</h4>
+            <p>Within 15 days</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <div class="trust-copy">
+            <h4>QUALITY ASSURED</h4>
+            <p>Best fashion, best quality</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="trust-copy">
+            <h4>SECURE PAYMENT</h4>
+            <p>100% secure checkout</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Product Showcase: "BEST OF GAZU" -->
+    <section class="products-section" id="catalog">
+      <div class="products-inner">
+        
+        <!-- Header -->
+        <div class="section-header">
+          <h2 class="section-title">BEST OF GAZU</h2>
+          <a href="#catalog" class="view-all-link" id="viewAllBtn">VIEW ALL</a>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+          <!-- Products will be dynamically populated & interactive -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Luxury Footer -->
+  <footer class="main-footer">
+    <div class="footer-inner">
+      <div class="footer-col brand-col">
+        <h3 class="footer-logo">GAZU</h3>
+        <p class="footer-tagline">Architectural silhouette, luxury fabrics, modern streetwear engineered for comfort and movement.</p>
+        <p class="footer-email">care@gazu.fashion | +91 800-GAZU-VIP</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">COLLECTIONS</h4>
+        <ul>
+          <li><a href="#catalog">Heavyweight Tees</a></li>
+          <li><a href="#catalog">Trench & Overcoats</a></li>
+          <li><a href="#catalog">Cargo & Parachute Pants</a></li>
+          <li><a href="#catalog">Caps & Accessories</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">HELP & SUPPORT</h4>
+        <ul>
+          <li><a href="#track">Track Order</a></li>
+          <li><a href="#returns">Exchange & Returns</a></li>
+          <li><a href="#shipping">Shipping Policy</a></li>
+          <li><a href="#privacy">Privacy & Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4 class="footer-heading">THE GAZU CLUB</h4>
+        <p>Subscribe to receive exclusive runway drops and 15% off your first luxury order.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="ENTER YOUR EMAIL" required class="newsletter-input">
+          <button type="submit" class="btn btn-black newsletter-btn">JOIN</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 GAZU CLOTHING CO. ALL RIGHTS RESERVED.</p>
+      <div class="payment-symbols">
+        <span>UPI</span> &bull; <span>VISA</span> &bull; <span>MASTERCARD</span> &bull; <span>AMEX</span> &bull; <span>NETBANKING</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <aside class="drawer-overlay" id="cartOverlay">
+    <div class="drawer" id="cartDrawer">
+      <div class="drawer-header">
+        <h3>YOUR CART (<span id="cartDrawerCount">0</span>)</h3>
+        <button class="drawer-close" id="closeCart">&times;</button>
+      </div>
+      
+      <!-- Free Shipping Progress -->
+      <div class="free-shipping-bar">
+        <div class="shipping-text" id="shippingText">Add ₹999 for FREE Delivery</div>
+        <div class="shipping-track">
+          <div class="shipping-fill" id="shippingFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items Container -->
+      <div class="drawer-body" id="cartItemsContainer">
+        <div class="empty-cart-msg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <p>Your bag is currently empty.</p>
+          <a href="#catalog" class="btn btn-black btn-sm" id="shopNowCartBtn">EXPLORE PRODUCTS</a>
+        </div>
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="drawer-footer" id="cartFooter">
+        <div class="cart-subtotal">
+          <span>SUBTOTAL:</span>
+          <span class="subtotal-val" id="cartSubtotal">₹0</span>
+        </div>
+        <p class="tax-note">Shipping & taxes calculated at checkout</p>
+        <button class="btn btn-black btn-block checkout-btn" id="checkoutBtn">PROCEED TO CHECKOUT</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Slide-out Wishlist Drawer -->
+  <aside class="drawer-overlay" id="wishlistOverlay">
+    <div class="drawer" id="wishlistDrawer">
+      <div class="drawer-header">
+        <h3>SAVED ITEMS (<span id="wishlistDrawerCount">0</span>)</h3>
+        <button class="drawer-close" id="closeWishlist">&times;</button>
+      </div>
+      <div class="drawer-body" id="wishlistItemsContainer">
+        <!-- Wishlist items populated dynamically -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- Search Modal Overlay -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-modal-content">
+      <div class="search-bar-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="SEARCH TEES, JACKETS, ACCESSORIES..." id="searchInput" autofocus>
+        <button class="search-close" id="closeSearch">&times;</button>
+      </div>
+      <div class="search-results-box" id="searchResults">
+        <p class="search-hint">Type to search catalog...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Mobile Bottom Sticky Navigation -->
+  <nav class="mobile-bottom-nav">
+    <a href="#" class="bottom-nav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span>Home</span>
+    </a>
+    <a href="#catalog" class="bottom-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span>Shop</span>
+    </a>
+    <button class="bottom-nav-item" id="mobileWishlistBtn">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge" id="mobileWishlistBadge">0</span>
+      </div>
+      <span>Saved</span>
+    </button>
+    <button class="bottom-nav-item" id="mobileCartBtn">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge" id="mobileCartBadge">0</span>
+      </div>
+      <span>Bag</span>
+    </button>
+  </nav>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
